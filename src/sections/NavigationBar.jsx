@@ -12,25 +12,24 @@ import {
   Tooltip,
 } from "@nextui-org/react";
 import { ThemeSwitch } from "../components/ThemeSwitch";
-import { useTheme } from "../contexts/ThemeProvider";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const { theme } = useTheme();
 
-  const menuItems = ["Profile", "Dashboard", "Activity"];
+  const menuItems = ["Productos", "Testimonios", "Sobre Nosotros", "Contacto"];
   return (
     <>
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
-        className={`${theme} `}
-        isBlurred={false}
+        className={`font-sans text-foreground`}
+        isBlurred={true}
+        isBordered
       >
         <NavbarContent>
           {/* LOGOTIPO DE LA EMPRESA */}
           <NavbarBrand>
-            <p className="font-bold text-foreground">LOGO</p>
+            <Link href="#" className="font-bold text-foreground">LOGO</Link>
           </NavbarBrand>
         </NavbarContent>
 
@@ -80,7 +79,7 @@ export default function NavigationBar() {
               </Button>
             </Tooltip>
             <ThemeSwitch />
-            <Button className="font-bold bg-primary text-background hover:ring-2 rounded" color="foreground" href="#">
+            <Button className="hidden sm:flex font-bold bg-primary text-background hover:ring-2 rounded" color="foreground" href="#">
               Contacto
             </Button>
           </NavbarItem>
@@ -92,13 +91,11 @@ export default function NavigationBar() {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color={
-                  index === 2
+                  index === 3
                     ? "primary"
-                    : index === menuItems.length - 1
-                    ? "danger"
                     : "foreground"
                 }
-                className="w-full text-3xl"
+                className="w-full text-3xl "
                 href="#"
                 size="lg"
               >

@@ -6,7 +6,9 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}",
   "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {}
+    },
   },
   plugins: [nextui({
     prefix: "nextui", // prefix for themes variables
