@@ -30,7 +30,7 @@ export default {
             700: "#E0E0E0",
             800: "#EEEEEE",
             900: "#F5F5F5"
-          }
+          },
         }, // light theme colors
       },
       dark: {
