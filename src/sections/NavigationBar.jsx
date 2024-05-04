@@ -24,6 +24,7 @@ export default function NavigationBar() {
         onMenuOpenChange={setIsMenuOpen}
         className={`font-sans text-foreground`}
         isBlurred={true}
+        height={'10vh'}
       >
         <NavbarContent>
           {/* LOGOTIPO DE LA EMPRESA */}
