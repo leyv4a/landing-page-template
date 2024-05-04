@@ -7,9 +7,9 @@ export default function Home() {
   const {theme} = useTheme();
   return (
   <>
-  <div className={`${theme} bg-background text-foreground`}>
-    <NavigationBar />
-    <Hero/>
+  <div className={`${theme} bg-background text-foreground `}>
+      <NavigationBar />
+      <Hero/>
   </div>
   </>
   )

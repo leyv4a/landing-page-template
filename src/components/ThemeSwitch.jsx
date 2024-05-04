@@ -22,7 +22,7 @@ export const ThemeSwitch = ({props}) => {
      <>
      <Tooltip content="Cambiar tema">
     <div className="flex flex-col gap-2">
-      <Component>
+      <Component> 
           <VisuallyHidden>
             <input {...getInputProps()} />
           </VisuallyHidden>

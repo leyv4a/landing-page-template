@@ -7,7 +7,9 @@ export default {
   "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {}
+      fontFamily: {
+        'main': ["Nunito Sans", "sans-serif"]
+      }
     },
   },
   plugins: [nextui({

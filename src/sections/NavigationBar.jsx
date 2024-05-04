@@ -24,7 +24,6 @@ export default function NavigationBar() {
         onMenuOpenChange={setIsMenuOpen}
         className={`font-sans text-foreground`}
         isBlurred={true}
-        isBordered
       >
         <NavbarContent>
           {/* LOGOTIPO DE LA EMPRESA */}
