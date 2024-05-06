@@ -9,10 +9,10 @@ export default function Home() {
   const {theme} = useTheme();
   return (
   <>
-  <div className={`${theme} bg-background text-foreground  `}>
+  <div  id='home' className={`${theme} bg-background text-foreground  `}>
       <NavigationBar />
       <Hero/>
-      <Spacer y={8}/>
+      <Spacer y={16}/>
       <Products/>
   </div>
   </>

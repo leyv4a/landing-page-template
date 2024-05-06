@@ -6,8 +6,8 @@ export default function Products() {
 
   return (
    <>
-    <h2 className='text-center text-4xl md:text-6xl font-main font-semibold mb-28'>Products</h2>
-    <div className="flex gap-16 justify-center">
+    <h2 id='productos' className='text-center text-4xl md:text-6xl font-main font-semibold mb-28'>Products</h2>
+    <div className="flex flex-wrap gap-16 justify-center">
         <ProductCard image={<FaBook/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'}/>
         <ProductCard image={<FaCalculator/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'}/>
         <ProductCard image={<FaCamera/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'}/>

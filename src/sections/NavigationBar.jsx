@@ -14,6 +14,7 @@ import {
 import { ThemeSwitch } from "../components/ThemeSwitch";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import ScrollIntoView from 'react-scroll-into-view'
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -29,16 +30,20 @@ export default function NavigationBar() {
         <NavbarContent>
           {/* LOGOTIPO DE LA EMPRESA */}
           <NavbarBrand>
-            <Link href="#" className="font-bold text-foreground">LOGO</Link>
+            <ScrollIntoView selector="#home">
+              <button className="font-bold text-foreground">LOGO</button>
+            </ScrollIntoView>
           </NavbarBrand>
         </NavbarContent>
 
         {/* GRUPO DE ITEMS */}
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Link  className="font-bold hover:text-foreground-200" color="foreground" href="#">
-              Productos
-            </Link>
+            <ScrollIntoView selector="#productos">
+              <button className="font-bold hover:text-foreground-200"  >
+                Productos
+              </button>
+            </ScrollIntoView>
           </NavbarItem>
           <NavbarItem>
             <Link className="font-bold hover:text-foreground-200" color="foreground" href="#">

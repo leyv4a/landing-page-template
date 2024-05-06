@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <>
-    <main className={` w-[95vw] md:w-[65vw] text-foreground mx-auto flex flex-col gap-6 items-center  justify-start font-sans mt-3 md:mt-28`}>
+    <main  className={` w-[95vw] md:w-[65vw] text-foreground mx-auto flex flex-col gap-6 items-center  justify-start font-sans mt-3 md:mt-28`}>
 
         {/* HEADER */}
         <motion.h1 className='text-center text-4xl md:text-7xl font-main font-semibold'
