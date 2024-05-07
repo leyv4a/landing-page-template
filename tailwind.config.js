@@ -39,7 +39,7 @@ export default {
       },
       dark: {
         colors: {
-          background: "#18181B", 
+          background: "#030816", 
           foreground: {
             50: "#F5F5F5",
             100: "#EEEEEE",

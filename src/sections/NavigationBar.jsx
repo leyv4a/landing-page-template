@@ -25,6 +25,7 @@ export default function NavigationBar() {
         onMenuOpenChange={setIsMenuOpen}
         className={`font-sans text-foreground`}
         isBlurred={true}
+        isBordered
         height={'10vh'}
       >
         <NavbarContent>
@@ -46,9 +47,11 @@ export default function NavigationBar() {
             </ScrollIntoView>
           </NavbarItem>
           <NavbarItem>
-            <Link className="font-bold hover:text-foreground-200" color="foreground" href="#">
-              Testimonios
-            </Link>
+            <ScrollIntoView selector="#testimonios">
+              <button className="font-bold hover:text-foreground-200"  >
+                Testimonios
+              </button>
+            </ScrollIntoView>
           </NavbarItem>
           <NavbarItem>
             <Link className="font-bold hover:text-foreground-200" color="foreground" href="#">
