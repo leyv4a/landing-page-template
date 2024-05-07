@@ -43,7 +43,7 @@ export default {
           foreground: {
             50: "#F5F5F5",
             100: "#EEEEEE",
-            200: "#E0E0E0",
+            200: "#d6d6d6",
             300: "#BDBDBD",
             400: "#9E9E9E",
             500: "#757575",

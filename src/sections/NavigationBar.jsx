@@ -54,9 +54,12 @@ export default function NavigationBar() {
             </ScrollIntoView>
           </NavbarItem>
           <NavbarItem>
-            <Link className="font-bold hover:text-foreground-200" color="foreground" href="#">
-              Sobre Nosotros
-            </Link>
+            <ScrollIntoView selector="#about">
+              <button className="font-bold hover:text-foreground-200"  >
+                Sobre Nosotros
+              </button>
+            </ScrollIntoView>
+          
           </NavbarItem>
          
         </NavbarContent>
