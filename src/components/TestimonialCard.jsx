@@ -15,27 +15,26 @@ export default function TestimonialCard({
       }, [])
   return (
     <>
-      <div data-aos={fade}>
         <div
-          className={`${position} w-[95vw] md:w-[65vw] flex justify-between`}
+        data-aos={fade}
+          className={`flex-col md:${position} w-[95vw] md:w-[65vw] flex  justify-between gap-2`}
         >
-          <div className="w-[10rem] h-[10rem] bg-primary rounded-full">
+          <div className="size-[4rem] lg:size-[10rem] bg-primary rounded-full">
             {image}
           </div>
           <div className="flex flex-col justify-center">
             <p
-              className={`${textPosition} text-4xl md:text-6xl font-main font-semibold mb-3`}
+              className={`md:${textPosition} text-1xl lg:text-6xl font-main font-semibold mb-3`}
             >
               {name}
             </p>
             <p
-              className={`${textPosition} text-xl md:text-2xl font-main font-semibold text-foreground-200`}
+              className={`md:${textPosition} lg:text-2xl font-main font-semibold text-foreground-200`}
             >
               "{text}"
             </p>
           </div>
         </div>
-      </div>
     </>
   );
 }
