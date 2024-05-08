@@ -13,7 +13,7 @@ export default function ContactCard({type, first, second}) {
     }
   return (
     <>
-        <div className='w-[30%] h-[8rem] bg-background flex flex-col shadow shadow-foreground-700 justify-center mb-10'>
+        <div className='w-[33.33%] h-[8rem] bg-background flex flex-col shadow shadow-foreground-700 justify-center rounded'>
 
         <div className='flex justify-center items-center text-2xl h-[2rem] '>
             {iconType[type]}

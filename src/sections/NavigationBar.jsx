@@ -91,7 +91,7 @@ export default function NavigationBar() {
             </Tooltip>
             <ThemeSwitch />
             <ScrollIntoView selector="#contacto">
-            <button className="hidden sm:flex font-bold bg-primary text-background hover:ring-2 rounded py-2 px-4">
+            <button className="hidden sm:flex font-bold bg-primary text-foreground hover:ring-2 rounded py-2 px-4">
               Contacto
             </button>
             </ScrollIntoView>

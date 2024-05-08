@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactCard from '../components/ContactCard'
+import ContactForm from '../components/ContactForm'
 
 export default function Contact() {
   return (
@@ -17,6 +18,7 @@ export default function Contact() {
             <ContactCard type={'email'} first={'johndoe@email.com'} second={'joandoe@email.con'}/>
             <ContactCard type={'address'} first={'15 Spook Rock Rd Suffern North Dakota 10901 '}/>
         </div>
+        <ContactForm/>
       </div>
     </>
   )
