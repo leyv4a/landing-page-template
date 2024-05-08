@@ -5,7 +5,7 @@ import { IoMdSunny } from "react-icons/io";
 import {  FaMoon  } from "react-icons/fa";
 
 export const ThemeSwitch = ({props}) => {
-    const {  toggleTheme } = useTheme();
+    const { theme, toggleTheme } = useTheme();
 
     const {
         Component, 
@@ -18,6 +18,10 @@ export const ThemeSwitch = ({props}) => {
     
     
 
+       // Almacenar el tema seleccionado en el localStorage
+  React.useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
     return (
      <>
      <Tooltip content="Cambiar tema">

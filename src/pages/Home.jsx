@@ -6,6 +6,7 @@ import { useTheme } from '../contexts/ThemeProvider';
 import Products from '../sections/Products';import Testimonials from '../sections/Testimonials';
 import About from '../sections/About';
 import Contact from '../sections/Contact';
+import Footer from '../sections/Footer';
 
 
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
       <About/>
       <Spacer y={32}/>
       <Contact/>
+      <Spacer y={32}/>
+      <Footer/>
   </div>
   </>
   )

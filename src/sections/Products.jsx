@@ -16,10 +16,10 @@ export default function Products() {
     <h2 className='text-center text-4xl md:text-6xl font-main font-semibold mb-12'>Products</h2>
     </div>
     <div className=" grid grid-cols-1 sm:grid-cols-2 md-grid-cols-2 lg:grid-cols-4 gap-12 ">
-        <ProductCard image={<FaBook/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'}/>
-        <ProductCard image={<FaCalculator/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'}/>
-        <ProductCard image={<FaCamera/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'}/>
-        <ProductCard image={<FaChessRook/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'}/>
+        <ProductCard image={<FaBook/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'} duration={500}/>
+        <ProductCard image={<FaCalculator/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'} duration={700}/>
+        <ProductCard image={<FaCamera/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'} duration={900}/>
+        <ProductCard image={<FaChessRook/>} title={'Product'} subtitle={' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quia. Delectus repellendus numquam accusantium.'} button={'Learn More'} duration={1100}/>
         
     </div>
    </div>

@@ -2,12 +2,17 @@ import React from 'react'
 import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
 import { IoTelescope } from "react-icons/io5";
 import { FaBullseye, FaChildren} from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ValuesCard() {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   return (
    <>
    
-    <div className="flex w-full items-center md:items-start flex-col mt-10 ">
+    <div  data-aos="fade-up-right" className="flex w-full items-center md:items-start flex-col mt-10 ">
         <p className='my-3 text-3xl'>Our porpuses</p>
       <Tabs aria-label="Options" color='primary' variant='bordered'>
         <Tab key="photos" title={

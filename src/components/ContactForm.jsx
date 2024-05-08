@@ -1,15 +1,20 @@
 import { Input, Textarea } from "@nextui-org/react";
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
   }
-
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
-      <div className="w-[100%] shadow shadow-foreground-700 rounded">
+      <div data-aos="flip-up"  className="w-[100%] shadow shadow-foreground-700 rounded">
         <form className="m-10" onSubmit={handleSubmit}>
         <p className="text-3xl font-bold font-sans mb-4 text-center">
           Send us a message
