@@ -5,7 +5,8 @@ import Hero from '../sections/Hero';
 import { useTheme } from '../contexts/ThemeProvider';
 import Products from '../sections/Products';import Testimonials from '../sections/Testimonials';
 import About from '../sections/About';
-;
+import Contact from '../sections/Contact';
+
 
 export default function Home() {
   const {theme} = useTheme();
@@ -20,6 +21,8 @@ export default function Home() {
       <Testimonials/>
       <Spacer y={32}/>
       <About/>
+      <Spacer y={32}/>
+      <Contact/>
   </div>
   </>
   )

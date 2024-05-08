@@ -10,7 +10,7 @@ export default function HistoryCard() {
   return (
     <>
     <div className='flex md:flex-row flex-col-reverse gap-8 flex-warp justify-between w-full'>
-        <Card data-aos="fade-up" className='w-full md:w-[35rem] h-[20rem] bg-slate-200'/>
+        <Card data-aos="fade-up" className='w-full md:w-[35rem] h-[20rem] bg-primary'/>
         <div data-aos="fade-up" className='w-full md:max-w-[40%] text-center md:text-right'>
             <p className='text-3xl mb-8'>
                 Our History

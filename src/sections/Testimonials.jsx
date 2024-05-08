@@ -10,10 +10,11 @@ export default function Testimonials() {
   }, []);
   return (
     <>
-      <div className="w-[95vw] md:w-[65vw] flex flex-col mx-auto items-start justify-center md:justify-start">
+        <p id='testimonios' className='invisible '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur dolor laudantium hic aliquid a suscipit! Vero mollitia enim quo magni! Beatae quod, quia doloremque temporibus, modi molestias laudantium eligendi laborum assumenda quidem nihil at et esse fugiat, tempore nulla maxime ad explicabo magni dolorum possimus! Aperiam itaque omnis recusandae? Molestias distinctio libero ea fugit. Officiis ut magni consectetur odio quisquam omnis accusantium nisi possimus recusandae. Ipsum laborum alias impedit quas minus recusandae voluptatum earum minima incidunt delectus hic, maxime, maiores doloribus necessitatibus! Cupiditate, consectetur similique voluptatum perferendis sapiente quod.</p>
+      <div className="w-[95vw] md:w-[65vw] flex flex-col mx-auto items-start justify-center md:justify-start  font-sans">
         <div data-aos="zoom-in">
           <h2
-            id="testimonios"
+           
             className="text-left text-4xl md:text-6xl font-main font-semibold mb-28 "
           >
             What our costumers
